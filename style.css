@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 
 
-root{
+:root{
     --cl-black: #0B0D17;
     --cl-peach: #D0D6F9;
-    --cl-white: #FFFFFF;
+    --cl-white: #ffffff;
     --ff-bellefair: 'Bellefair', serif;
     --ff-barlow:'Barlow Condensed', sans-serif;;
 }
@@ -14,6 +14,7 @@ root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--cl-white);
 }
 
 .home{
@@ -27,7 +28,101 @@ root{
 
 header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
+    
+}
+
+.header-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.2);
+    height: 3.5rem;
+}
+
+.header-ul li{
+    margin: 0 4rem;
+
+}
+
+.header-ul a{
+    text-decoration: none;
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+}
+
+
+hr {
+    margin-left: 16px;
+    border: 0.1px solid var(--cl-peach);
+    width: 35vw;
+    opacity: 0.3;
+    
+}
+
+h1{
+    font-family: var(--ff-bellefair);
+    font-size: 150px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 100px;
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 56px;
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 32px;
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+}
+
+h5{
+    font-family: var(--ff-barlow);
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+ p{
+    font-family: var(--ff-barlow);
+ }
+main{
+    display: flex;
+    flex-direction:row;
+    padding: 4rem;
+}
+
+.explore{
+    background-color: var(--cl-white);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.explore a{
+    text-decoration: none;
+    color: var(--cl-black);
+    font-size: 56px;
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
     
 }
