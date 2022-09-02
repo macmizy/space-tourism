@@ -6,7 +6,13 @@
     --cl-peach: #D0D6F9;
     --cl-white: #ffffff;
     --ff-bellefair: 'Bellefair', serif;
-    --ff-barlow:'Barlow Condensed', sans-serif;;
+    --ff-barlow:'Barlow Condensed', sans-serif;
+    
+    
+}
+
+html{
+    font-size: 18px;
 }
 
 
@@ -18,7 +24,7 @@
 }
 
 .home{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(./images/home/background-home-desktop.jpg);
     background-position: center;
@@ -42,19 +48,37 @@ header{
     align-items: center;
     justify-content: space-around;
     background: rgba(0,0,0,0.2);
-    height: 3.5rem;
+    
 }
 
 .header-ul li{
-    margin: 0 4rem;
+    padding: 2rem 0;
+    margin: 0 2.5rem;
+    border-bottom: 0;
+}
 
+.header-ul li:hover{
+    border-bottom: 2px solid rgba(255, 255, 255,0.5);   
+
+}
+
+
+.header-ul span{
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    font-weight: 700;
 }
 
 .header-ul a{
     text-decoration: none;
     font-family: var(--ff-barlow);
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
 }
+
+
 
 
 hr {
@@ -100,29 +124,118 @@ h5{
 
  p{
     font-family: var(--ff-barlow);
+    line-height: 2rem;
  }
-main{
+
+.main{
+    margin-top: 1rem;
     display: flex;
     flex-direction:row;
     padding: 4rem;
+    gap: 10%;
+    
+}
+
+.home-content{
+    flex-basis: 50%;
+}
+
+.home-content h1{
+    margin: 1rem 0;
+}
+
+.explore-container{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .explore{
+    position: relative;
     background-color: var(--cl-white);
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     
+}
+
+.explore::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 50%;
+    
+    
+}
+
+.explore:is(:hover,:focus):after{
+    transform: scale(1.5);
+    opacity: 15%;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
 
 .explore a{
     text-decoration: none;
     color: var(--cl-black);
-    font-size: 56px;
+    font-size: 32px;
     font-family: var(--ff-bellefair);
     text-transform: uppercase;
     
+}
+
+@media(max-width:768px){
+    .home{
+        background-image: url(./images/home/background-home-tablet.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .main{
+        margin-top: 0;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        padding:2rem 4rem;
+        gap: 4rem;
+    }
+    
+    hr{
+        display: none;
+    }
+    .home-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-ul li{
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    .home-content p{
+        text-align: center;
+    }
+
+    .home-content h1{
+        margin: 0;
+    }
+
+    .explore{
+        height: 12rem;
+        width: 12rem;
+    }
+
 }
