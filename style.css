@@ -13,6 +13,7 @@
 
 html{
     font-size: 18px;
+    font-weight: 300;
 }
 
 
@@ -34,6 +35,7 @@ h2{
     font-size: 100px;
     font-family: var(--ff-bellefair);
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 h3{
@@ -59,6 +61,26 @@ h5{
  p{
     font-family: var(--ff-barlow);
     line-height: 2rem;
+ }
+
+ .subheading1{
+    font-size: 28px;
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+ }
+
+ .subheading2{
+    font-size: 14px;
+    font-family: var(--ff-barlow);
+    letter-spacing: 2.35;
+    text-transform: uppercase;
+ }
+
+ .navtext{
+    font-size: 16px;
+    font-family: var(--ff-barlow);
+    letter-spacing: 2.7;
+    text-transform: uppercase;
  }
 
 
@@ -95,13 +117,13 @@ header button{
     
 }
 
-.header-ul li{
+.header-li{
     padding: 2rem 0;
     margin: 0 2.5rem;
     border-bottom: 0;
 }
 
-.header-ul li:hover{
+.header-li:hover{
     border-bottom: 2px solid rgba(255, 255, 255,0.5);   
 
 }
@@ -133,7 +155,7 @@ hr {
     
 }
 
-.main{
+main{
     margin-top: 1rem;
     display: flex;
     flex-direction:row;
@@ -208,7 +230,7 @@ hr {
         background-repeat: no-repeat;
     }
 
-    .main{
+    main{
         margin-top: 0;
         display: flex;
         flex-direction:column;
@@ -227,7 +249,7 @@ hr {
         justify-content: center;
         flex-direction: column;
     }
-    .header-ul li{
+    .header-li{
         padding: 1rem 0;
         margin: 0 1rem;
     }
@@ -297,7 +319,7 @@ hr {
         background-repeat: no-repeat;
     }
 
-    .main{
+    main{
         padding: 2rem 1rem;
         gap: 5rem;
     }
@@ -343,4 +365,45 @@ hr {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.destination{
+
+    background-image: url(./images/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.destination-ul{
+    width: 12rem;
+}
+
+
+.destination-li{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0;
+}
+
+.destination-li:hover{
+    border-bottom: 2px solid rgba(255, 255, 255,0.5);   
+
+}
+
+.image-content .text{
+    margin: 1rem 0;
+}
+
+.image-content .image{
+    margin-top: 3rem;
+}
+
+.image-content span{
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255,0.5);
 }
