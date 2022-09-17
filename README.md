@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/macmizy/space-tourism)
-- Live Site URL: [live site URL](https://Space-tourism-website.rufairahim.repl.co)
+- [solution URL](https://github.com/macmizy/space-tourism)
+- [live site URL](https://Space-tourism-website.rufairahim.repl.co)
 
 ## My process
 
