@@ -133,6 +133,9 @@ header button{
 
 }
 
+.header-li[aria-selected="true"]{
+    border-bottom: 2px solid white;
+}
 
 .header-ul span{
     font-family: var(--ff-barlow);
@@ -439,9 +442,14 @@ main{
 
 }
 
-.destination a{
-    text-decoration: none;
+.destination-li button{
+background-color: transparent;
+border: 0;
 
+}
+
+.destination-li[aria-selected="true"]{
+    border-bottom: 2px solid white;
 }
 
 .image-content .text{
@@ -621,9 +629,8 @@ main{
     background-color: rgba(255, 255, 255,0.7);
 }
 
-.button-container a{
-    text-decoration: none;
-    color: transparent;
+.button-container button[aria-selected="true"]{
+    background-color: white;
 }
 
 .crew-image{
@@ -779,6 +786,11 @@ main{
     cursor: pointer;
     border:1px solid rgba(255, 255, 255,0.5);
 
+}
+
+.technology-button-container button[aria-selected="true"]{
+    background-color: white;
+    color: black;
 }
 
 .technology-button-container button:hover{

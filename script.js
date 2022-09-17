@@ -5,3 +5,6 @@ menubtn.addEventListener("click",()=>{
     menulist.classList.toggle("show")
     menubtn.classList.toggle("active")
 })
+
+
+

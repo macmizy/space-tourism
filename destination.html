@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="./destination.js" defer></script>
+  <script src="./script.js" defer></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="destination">
@@ -19,10 +20,10 @@
     </div>
     <nav>
       <ul class="header-ul" id="menulist">
-        <li class="header-li"> <a href="./index.html"> <span>00</span> Home</a> </li>
-        <li class="header-li"> <a href="./destination-moon.html"> <span>01</span> Destination</a></li>
-        <li class="header-li"> <a href="./crew-commander.html"> <span>02</span> Crew</a></li>
-        <li class="header-li"> <a href="./technology-vehicle.html"> <span>03</span> Technology</a></li>
+        <li class="header-li" aria-selected="false" id="home"> <a href="./index.html"> <span>00</span> Home</a> </li>
+        <li class="header-li" aria-selected="true" id="destination"> <a href="./destination.html"> <span>01</span> Destination</a></li>
+        <li class="header-li" aria-selected="false" id="crew"> <a href="./crew.html"> <span>02</span> Crew</a></li>
+        <li class="header-li" aria-selected="false" id="technology"> <a href="./technology.html"> <span>03</span> Technology</a></li>
       </ul>
     </nav>
     <button id="menubtn">
@@ -37,21 +38,21 @@
       <h5> <span>01</span> Pick your destination</h5>
     </div>
     <div class="image">
-      <img src="./images/destination/image-moon.webp" alt="Moon">
+      <img src="./images/destination/image-moon.webp" alt="Moon" id="destimg">
     </div>
   </div>
   <div class="destination-content">
     <div class="destination-ul-container">
       <ul class="destination-ul">
-        <li class="destination-li"><a href="./destination-moon.html" class="navtext">Moon</a></li>
-        <li class="destination-li"><a href="./destination-mars.html" class="navtext">Mars</a></li>
-        <li class="destination-li"><a href="./destination-europa.html" class="navtext">Europa</a></li>
-        <li class="destination-li"><a href="./destination-titan.html" class="navtext">Titan</a></li>
+        <li class="destination-li" id="moon" aria-selected="true"><button class="navtext moon">Moon</button></li>
+        <li class="destination-li" id="mars" aria-selected="false"><button  class="navtext mars">Mars</button></li>
+        <li class="destination-li" id="europa" aria-selected="false"><button  class="navtext europa">Europa</button></li>
+        <li class="destination-li" id="titan" aria-selected="false"><button  class="navtext titan">Titan</button></li>
       </ul>
     </div>
     <div class="destination-words">
-      <h2>Moon</h2>
-      <p> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+      <h2 id="desth2">Moon</h2>
+      <p id="destp"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
         by visiting the Luna 2 and Apollo 11 landing sites.</p>
     </div>
@@ -59,15 +60,15 @@
     <div class="destination-foot">
       <div class="destination-foot-text">
         <div class="subheading2">Avg. distance</div>
-        <div class="subheading1">384,400 km</div>
+        <div class="subheading1" id="destkilo">384,400 km</div>
       </div>
       <div class="destination-foot-text">
         <div class="subheading2"> Est. travel time</div>
-        <div class="subheading1">3 days</div>
+        <div class="subheading1" id="destdays">3 days</div>
       </div>
     </div>
   </div>
 </main>
-<script src="./script.js"></script>
+
 </body>
 </html>

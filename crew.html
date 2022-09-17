@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./crew.js" defer></script>
+  <script src="./script.js" defer></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="crew">
+  <header>
+    <div>
+      <img src="./images/shared/logo.svg" alt="logo">
+    </div>
+    <div>
+    <hr class="header-line">
+    </div>
+    <nav>
+      <ul class="header-ul" id="menulist">
+        <li class="header-li" aria-selected="false" id="home"> <a href="./index.html"> <span>00</span> Home</a> </li>
+        <li class="header-li" aria-selected="false" id="destination"> <a href="./destination.html"> <span>01</span> Destination</a></li>
+        <li class="header-li" aria-selected="true" id="crew"> <a href="./crew.html"> <span>02</span> Crew</a></li>
+        <li class="header-li" aria-selected="false" id="technology"> <a href="./technology.html"> <span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <button id="menubtn">
+  
+    </button>
+    
+  </header>
+  <main>
+    <div class="crew-content">
+      <div class="crew-content-head">
+        <h5> <span>02</span>Meet your crew</h5>
+      </div>
+      <div class="mobile-crew-image">
+        <img id="imagee" src="./images/crew/image-douglas-hurley.webp" alt="Douglas Hurley">
+        <hr class="crew-line">
+        <div class="button-container">
+          <button aria-selected="true" id="commander"></button>
+          <button aria-selected="false" id="specialist"></button>
+          <button aria-selected="false" id="pilot"></button>
+          <button aria-selected="false" id="engineer"></button>
+        </div>
+
+      </div>
+      <div class="crew-content-text">
+        <h4 id="crewrole">Commander</h4>
+        <h3 id="crewname">Douglas Hurley</h3>
+        <p id="crewp">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+          and former NASA astronaut. He launched into space for the third time as 
+          commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+      <div class="desktop-btn button-container">
+        <button aria-selected="true" id="commander1"></button>
+        <button aria-selected="false" id="specialist1"></button>
+        <button aria-selected="false" id="pilot1"></button>
+        <button aria-selected="false" id="engineer1"></button>
+      </div>
+    </div>
+    <div class="crew-image">
+      <img id="imagee1" src="./images/crew/image-douglas-hurley.webp" alt="Douglas Hurley">
+    </div>
+  </main>
+  
+</body>
+</html>

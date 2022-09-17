@@ -6,7 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <script src="./technology.js" defer></script>
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -20,10 +21,10 @@
     </div>
     <nav>
       <ul class="header-ul" id="menulist">
-        <li class="header-li"> <a href="./index.html"> <span>00</span> Home</a> </li>
-        <li class="header-li"> <a href="./destination-moon.html"> <span>01</span> Destination</a></li>
-        <li class="header-li"> <a href="./crew-commander.html"> <span>02</span> Crew</a></li>
-        <li class="header-li"> <a href="./technology-vehicle.html"> <span>03</span> Technology</a></li>
+        <li class="header-li" aria-selected="false" id="home"> <a href="./index.html"> <span>00</span> Home</a> </li>
+        <li class="header-li" aria-selected="false" id="destination"> <a href="./destination.html"> <span>01</span> Destination</a></li>
+        <li class="header-li" aria-selected="false" id="crew"> <a href="./crew.html"> <span>02</span> Crew</a></li>
+        <li class="header-li" aria-selected="true" id="technology"> <a href="./technology.html"> <span>03</span> Technology</a></li>
       </ul>
     </nav>
     <button id="menubtn">
@@ -38,20 +39,20 @@
       </div>
 
       <div class="mobile-technology-image">
-        <img src="./images/technology/image-launch-vehicle-landscape.jpg" alt="Launch-vehicle">
+        <img id="image" src="./images/technology/image-launch-vehicle-landscape.jpg" alt="Launch-vehicle">
       </div>
 
       <div class="technology-subcontent">
         <div class="technology-button-container">
-          <a href="./technology-vehicle.html"><button>1</button></a>
-          <a href="./technology-spaceport.html"><button>2</button></a>
-          <a href="./technology-capsule.html"><button>3</button></a>
+          <button id="1" aria-selected="true">1</button>
+          <button id="2" aria-selected="false">2</button>
+          <button id="3" aria-selected="false">3</button>
         </div>
 
         <div class="technology-content-text">
             <div class="navtext">The terminology...</div>
-            <h3>Launch vehicle</h3>
-            <p>
+            <h3 id="techname">Launch vehicle</h3>
+            <p id="techp">
               A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
               payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
               WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
@@ -61,9 +62,9 @@
       </div>
     </div>
     <div class="technology-image">
-      <img src="./images/technology/image-launch-vehicle-portrait.jpg" alt="Launch-vehicle">
+      <img id="image1" src="./images/technology/image-launch-vehicle-portrait.jpg" alt="Launch-vehicle">
     </div>
   </main>
-  <script src="./script.js" defer></script>
+  
 </body>
 </html>
